@@ -1,13 +1,52 @@
 h1 {
     color: #0a1f6b;
     font-family: Arial, sans-serif;
+    text-align: center;
+   
+  width: 100%;             
+  max-width: 1200px;      
+  margin: 40px auto;       
+  
+  
+  padding: 60px 20px;      
+  background-color: #7d8ab8; 
+  
+  
+  border: 1px solid #ddd;  
+  border-radius: 8px;      
 }
 
 h2 {
   color: #4057a8;
   font-family: Arial, sans-serif;
+  text-align: center;
+    
+  width: 100%;             
+  max-width: 1200px;      
+  margin: 40px auto;       
+  
+  
+  padding: 60px 20px;      
+  background-color: #7d8ab8; 
+  
+  
+  border: 1px solid #ddd;  
+  border-radius: 8px;      
 }
 
 p {
   font-family: Arial, sansserif;
+  text-align: center;
+
+  width: 100%;             
+  max-width: 1200px;      
+  margin: 40px auto;       
+  
+  
+  padding: 60px 20px;      
+  background-color: #7d8ab8; 
+  
+  
+  border: 1px solid #ddd;  
+  border-radius: 8px;      
 }
