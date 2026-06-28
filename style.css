@@ -1,7 +1,5 @@
 .header {
     text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
     font-family: Arial, Gill Sans, sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -11,7 +9,6 @@
 
 .introText {
     text-align: center;
-    padding-left: 15%;
     font-family: Arial, Gill Sans, sans-serif;
     font-size: 18px;
     color: rgb(5, 7, 66);
@@ -19,8 +16,8 @@
 }
 
 .meimage {
-    /* display: flex;
-    justify-content: flex-start; */
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
     height: 300px;
     border: 8px, solid, rgb(0,0,0);
