@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     text-align: center;
     font-family: Arial, Gill Sans, sans-serif;
@@ -5,15 +10,19 @@
     font-size: 40px;
     color: rgb(10, 13, 87);
     background-color: rgb(250, 249, 246);
+    padding: 20px 0;
+    margin: 0;
 }
 
 .introText {
-    max-width: 500px;
+    max-width: 100%;
     text-align: center;
     font-family: Arial, Gill Sans, sans-serif;
     font-size: 18px;
     color: rgb(5, 7, 66);
     background-color: rgb(250, 249, 246);
+    margin: 0;
+    padding: 20px;
 }
 
 .meimage {
@@ -23,6 +32,7 @@
     height: 300px;
     border: 8px solid rgb(250, 249, 246);
     background-color: rgb(3, 5, 69);
+    margin: 0;
 }
 
 .meimage img {
