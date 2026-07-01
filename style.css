@@ -3,6 +3,12 @@ body {
     padding: 0;
 }
 
+.navbar {
+    background-color: rgb(10, 13, 87);
+    padding: 15px 20px;
+    height: 50px;
+}
+
 .header {
     text-align: center;
     font-family: Arial, Gill Sans, sans-serif;
