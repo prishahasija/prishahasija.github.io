@@ -4,7 +4,7 @@ body {
 }
 
 .navbar {
-    background-color: rgb(10, 13, 87);
+    background-color: rgb(250, 249, 246);
     padding: 15px 20px;
     height: 50px;
 }
@@ -14,10 +14,11 @@ body {
     font-family: Arial, Gill Sans, sans-serif;
     font-weight: bold;
     font-size: 40px;
-    color: rgb(10, 13, 87);
-    background-color: rgb(250, 249, 246);
+    color: rgb(31, 52, 120);
+    background-color: rgb(31, 52, 120);
     padding: 20px 0;
     margin: 0;
+    color: rgb(250, 249, 246);
 }
 
 .introText {
@@ -26,7 +27,7 @@ body {
     text-align: center;
     font-family: Arial, Gill Sans, sans-serif;
     font-size: 18px;
-    color: rgb(5, 7, 66);
+    color: rgb(31, 52, 120);
     background-color: rgb(250, 249, 246);
     padding: 20px;
 }
@@ -37,7 +38,7 @@ body {
     align-items: center;
     height: 300px;
     border: 8px solid rgb(250, 249, 246);
-    background-color: rgb(3, 5, 69);
+    background-color: rgb(31, 52, 120);
     margin: 0;
 }
 
