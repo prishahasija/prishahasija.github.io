@@ -6,15 +6,53 @@
     <title>Prisha Hasija</title>
   </head>
   <body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Floating Particles -->
+    <script>
+      function createParticles() {
+        const bg = document.querySelector('.animated-bg');
+        const particleCount = 20;
+        
+        for (let i = 0; i < particleCount; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'particle';
+          
+          // Random particle type (60% dots, 40% circles)
+          const type = Math.random() > 0.6 ? 'circle' : 'dot';
+          particle.innerHTML = `<div class="particle-${type}"></div>`;
+          
+          // Random horizontal position (0-100% across screen)
+          const randomLeft = Math.random() * 100;
+          particle.style.left = randomLeft + '%';
+          particle.style.top = '-50px';
+          
+          // Random animation duration (8-20 seconds for variety)
+          const duration = 8 + Math.random() * 12;
+          particle.querySelector('div').style.animationDuration = duration + 's';
+          
+          // Random delay so particles don't all start at same time
+          const delay = Math.random() * 5;
+          particle.querySelector('div').style.animationDelay = delay + 's';
+          
+          bg.appendChild(particle);
+        }
+      }
+      
+      // Create particles when page loads
+      document.addEventListener('DOMContentLoaded', createParticles);
+    </script>
+
     <nav class="navbar">
-      <a href="/" class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <img src="Adobe Express - file (1).png" alt="the logo">
       </a>
 
       <ul class ="nav-links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Extracurriulars</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="extracurriculars.html">Extracurriculars</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <h1 class="header">Hey, I'm Prisha!</h1>
