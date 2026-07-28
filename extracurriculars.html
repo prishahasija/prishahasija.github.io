@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Extracurriculars - Prisha Hasija</title>
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Floating Particles -->
+    <script>
+      function createParticles() {
+        const bg = document.querySelector('.animated-bg');
+        const particleCount = 20;
+        
+        for (let i = 0; i < particleCount; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'particle';
+          
+          // Random particle type (60% dots, 40% circles)
+          const type = Math.random() > 0.6 ? 'circle' : 'dot';
+          particle.innerHTML = `<div class="particle-${type}"></div>`;
+          
+          // Random horizontal position (0-100% across screen)
+          const randomLeft = Math.random() * 100;
+          particle.style.left = randomLeft + '%';
+          particle.style.top = '-50px';
+          
+          // Random animation duration (8-20 seconds for variety)
+          const duration = 8 + Math.random() * 12;
+          particle.querySelector('div').style.animationDuration = duration + 's';
+          
+          // Random delay so particles don't all start at same time
+          const delay = Math.random() * 5;
+          particle.querySelector('div').style.animationDelay = delay + 's';
+          
+          bg.appendChild(particle);
+        }
+      }
+      
+      // Create particles when page loads
+      document.addEventListener('DOMContentLoaded', createParticles);
+    </script>
+
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">
+        <img src="Adobe Express - file (1).png" alt="the logo">
+      </a>
+
+      <ul class ="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="extracurriculars.html">Extracurriculars</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h1 class="header">Extracurriculars</h1>
+    
+    <div class="page-content">
+      <section class="about-section">
+        <h2>My Activities</h2>
+        <div class="interests-grid">
+          <div class="interest-card">
+            <h3>Crew (Rowing)</h3>
+            <p>Rowing is a core part of my life. I'm dedicated to improving my skills and contributing to my team's success on the water.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Science Club</h3>
+            <p>I'm involved in various science-related clubs that align with my passion for astronomy and aerospace.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Coding Club</h3>
+            <p>I participate in coding clubs to improve my programming skills and collaborate with other tech-minded students.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Debate</h3>
+            <p>Debate helps me develop critical thinking and public speaking skills while engaging with interesting topics.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Volunteer Work</h3>
+            <p>I'm committed to giving back to my community through various volunteer initiatives.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Academic Competitions</h3>
+            <p>I enjoy participating in academic competitions that challenge my problem-solving abilities.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div class="introText">
+          <p>Through these activities, I've learned valuable skills like teamwork, leadership, time management, and perseverance. Each activity brings unique challenges and rewarding experiences.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Prisha Hasija. All rights reserved.</p>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Email</a>
+    </footer>
+  </body>
+</html>
